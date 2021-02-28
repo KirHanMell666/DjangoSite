@@ -1,1 +1,1 @@
-# DjangoSite
+# DjangoSite - Jakub Meller
