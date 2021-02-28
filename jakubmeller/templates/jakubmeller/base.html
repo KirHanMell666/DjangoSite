@@ -1,0 +1,64 @@
+{% load static %}
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="content">
+      <div class="side-item">
+        <a href="/" class="logo">Jakub Meller<i class="material-icons">person</i></a>
+      </div>
+      <div class="main-menu">
+        <a href="" id="articles" class="main-menu-item"><i class="material-icons">edit</i></a>
+        {% if user.is_superuser %}
+        <a href="/admin" id="admin" class="main-menu-item"><i class="material-icons">admin_panel_settings</i></a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <!--
+  <section class="section">
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </section>
+  -->
+  <div class="footer">
+    <div class="footer-column">
+      Jakub Meller<br>
+      Student PJATK Warszawa<br>
+    </div>
+    <div class="footer-column">
+      Strona powstała przy użyciu Django<br>
+    </div>
+  </div>
+</body>
+</html>
+
+<!--
+<script>
+  let currentTab = window.location.toString();
+
+  function selectTab(name) {
+    document.getElementsByClassName('main-menu-item')[0].classList.remove('focused-item');
+    document.getElementById(name).classList.add('focused-item');
+  }
+
+  if(currentTab.includes('podcast')) {
+    selectTab('podcast')
+  } else if(currentTab.includes('blog')) {
+    selectTab('blog')
+  } else if(currentTab.includes('tutorial')) {
+    selectTab('tutorial')
+  } else if(currentTab.includes('jobs')) {
+    selectTab('jobs')
+  }
+
+</script>
+-->
