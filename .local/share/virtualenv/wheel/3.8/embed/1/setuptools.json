@@ -1,0 +1,22 @@
+{
+  "completed": "2021-02-28T15:22:51.838086Z",
+  "periodic": true,
+  "started": "2021-02-28T15:22:38.467020Z",
+  "versions": [
+    {
+      "filename": "setuptools-53.1.0-py3-none-any.whl",
+      "found_date": "2021-02-28T15:22:39.095023Z",
+      "release_date": "2021-02-25T14:44:08.000000Z"
+    },
+    {
+      "filename": "setuptools-53.0.0-py3-none-any.whl",
+      "found_date": "2021-02-28T15:22:44.530176Z",
+      "release_date": "2021-02-01T15:39:30.000000Z"
+    },
+    {
+      "filename": "setuptools-52.0.0-py3-none-any.whl",
+      "found_date": "2021-02-28T15:22:48.508105Z",
+      "release_date": "2021-01-24T01:34:31.000000Z"
+    }
+  ]
+}
