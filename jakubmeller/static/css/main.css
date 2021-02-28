@@ -1,13 +1,4 @@
 @import url(fp.css);
-@import url(filter.css);
-@import url(jobs.css);
-@import url(podcast.css);
-@import url(tutorial.css);
-@import url(tutorial_add.css);
-@import url(tutorial_single.css);
-@import url(forms.css);
-@import url(blog.css);
-@import url(add_article.css);
 
 html {
     font-family: Roboto sans-serif !important;
