@@ -15,6 +15,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = os.path.normpath(os.path.dirname(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,7 +28,6 @@ SECRET_KEY = 'u+($%z8!iiqp5$3sflkf@q4ingt^qigzxus8d+85q01p9)eh7n'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
 
 # Application definition
 
@@ -121,6 +121,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 STATICFILES_DIRS = [
     "jakubmeller/static",
