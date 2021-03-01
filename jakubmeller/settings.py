@@ -133,3 +133,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = 'fp'
 LOGOUT_REDIRECT_URL = 'fp'
+
+PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
+
+TEMPLATE_DIRS = [
+    os.path.join(PROJECT_PATH, '/jakubmeller/templates/jakubmeller/'),
+]
