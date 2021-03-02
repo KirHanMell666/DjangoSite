@@ -1,13 +1,87 @@
-h3 {
-    color: grey;
-    text-transform: uppercase;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-}
-
 .start {
     margin-top: 80px;
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tech-box {
+    display: flex;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #f2f2f2, #ffffff);
+    border-radius: 10px;
+}
+
+.tech-box .first-col .img-box {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+    min-width: 250px;
+}
+
+.tech-box .first-col .img-box img {
+    transition: 0.2s;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tech-box .first-col .img-box img:hover {
+    opacity: 0.6;
+}
+
+.tech-box .first-col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tech-box .name {
+    text-decoration: none;
+    color: #0d0d0d;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.tech-box .description {
+    font-size: 10px;
+    color: #777777;
+}
+
+.tech-box .desc {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.name {
+    margin-top: 10px;
+}
+
+.level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.name-box {
+    width: 750px;
+    justify-content: center;
+    align-items: center;
+}
+
+.level-box {
+    width: 150px;
+    display: flex;
+    align-items: center;
 }

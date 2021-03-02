@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
 from ckeditor.fields import RichTextField
+
+
 # Create your models here.
 
 
@@ -20,3 +22,11 @@ class Article(models.Model):
 
     class Meta:
         ordering = ['date_added']
+
+
+class Technology(models.Model):
+    name = models.CharField(max_length=127)
+    description = models.TextField(max_length=511)
+    image = models.FileField(upload_to="image/%y/%m", default="blank.png")
+    level = models.CharField(max_length=63)
+    section = models.IntegerField()

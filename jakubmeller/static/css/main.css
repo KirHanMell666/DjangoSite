@@ -3,12 +3,19 @@
 html {
     font-family: Roboto sans-serif !important;
     overflow-x: hidden;
+    height: 100%;
 }
 
 body {
-    padding: 0;
-    margin: 0;
     font: normal 13px Verdana, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 .navbar {
@@ -167,20 +174,17 @@ body {
 }
 
 .footer {
-    background-color: #161616;
-    color: #afafaf;
-    left: 0;
-    clear: both;
-    margin-top: -300px;
-    display: flex;
-    justify-content: center;
-    padding:15px 0;
-    font-weight: lighter;
-    line-height: 250%;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 20px;
+  flex-shrink: 0;
+  background-color: #161616;
+  color: #afafaf;
+  display: flex;
+  clear: both;
+  justify-content: center;
+  padding: 10px 0;
+  font-weight: lighter;
+  width: 100%;
+  line-height: 250%;
+  position: 8;
 }
 
 .footer-column {
