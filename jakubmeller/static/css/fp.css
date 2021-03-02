@@ -59,7 +59,7 @@
 .tech-box .desc {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 600px;
 }
 
 .name {
@@ -75,13 +75,16 @@
 }
 
 .name-box {
-    width: 750px;
+    width: 600px;
     justify-content: center;
     align-items: center;
 }
 
 .level-box {
+    padding-left: 15px;
     width: 150px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    font-size: 16;
 }

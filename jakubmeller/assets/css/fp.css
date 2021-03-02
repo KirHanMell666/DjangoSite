@@ -1,0 +1,7 @@
+h3 {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
