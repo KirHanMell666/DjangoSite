@@ -8,148 +8,22 @@
 </head>
 
 <body>
-<div class="content">
+<div class="mycontent">
     <div class="navbar">
         <div class="content">
             <div class="side-item">
-                <a href="/" class="logo">
-                    <i class="material-icons">person</i>
-                    Jakub Meller
-                </a>
+                <a href="/" id="fp" class="main-menu-item"><i class="material-icons">home</i></a>
             </div>
             <div class="main-menu">
-                <a href="" id="info" class="main-menu-item"><i class="material-icons">info</i></a>
+                <a href="/history" id="history" class="main-menu-item"><i class="material-icons">history_edu</i>Życiorys</a>
+                <a href="/skills" id="skills" class="main-menu-item"><i class="material-icons">local_library</i>Umiejętności</a>
+                <a href="/aboutme" id="aboutme" class="main-menu-item"><i class="material-icons">person</i>O mnie</a>
             </div>
         </div>
     </div>
-
-    <div class="start">
-        <h1>Co potrafię?</h1>
-    </div>
-    <div class="section">
-
-        <div class="title">
-            <h2>Języki programowania</h2>
-        </div>
-        {% for tech in technologies %}
-        {% if tech.section == 1 %}
-        <div class="tech-box">
-            <div class="first-col">
-                <div class="img-box">
-                    <img src="{{ tech.image.url }}" width="100px" height="100px"/>
-                </div>
-                <div class="desc">
-                    <div class="name-box">
-                        <div class="name">
-                            {{ tech.name }}
-                        </div>
-                        <div class="body">
-                            {{ tech.description }}
-                        </div>
-                    </div>
-                </div>
-                <div class="level">
-                    <div class="level-box">
-                        {{ tech.level }}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-        {% endfor %}
-
-        <div class="title">
-            <h2>Systemy operacyjne</h2>
-        </div>
-
-        {% for tech in technologies %}
-        {% if tech.section == 2 %}
-        <div class="tech-box">
-            <div class="first-col">
-                <div class="img-box">
-                    <img src="{{ tech.image.url }}" width="100px" height="100px"/>
-                </div>
-                <div class="desc">
-                    <div class="name-box">
-                        <div class="name">
-                            {{ tech.name }}
-                        </div>
-                        <div class="body">
-                            {{ tech.description }}
-                        </div>
-                    </div>
-                </div>
-                <div class="level">
-                    <div class="level-box">
-                        {{ tech.level }}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-        {% endfor %}
-
-        <div class="title">
-            <h2>Technologie z jakimi miałem styczność</h2>
-        </div>
-
-        {% for tech in technologies %}
-        {% if tech.section == 3 %}
-        <div class="tech-box">
-            <div class="first-col">
-                <div class="img-box">
-                    <img src="{{ tech.image.url }}" width="100px" height="100px"/>
-                </div>
-                <div class="desc">
-                    <div class="name-box">
-                        <div class="name">
-                            {{ tech.name }}
-                        </div>
-                        <div class="body">
-                            {{ tech.description }}
-                        </div>
-                    </div>
-                </div>
-                <div class="level">
-                    <div class="level-box">
-                        {{ tech.level }}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-        {% endfor %}
-
-        <div class="title">
-            <h2>Inne</h2>
-        </div>
-
-        {% for tech in technologies %}
-        {% if tech.section == 4 %}
-        <div class="tech-box">
-            <div class="first-col">
-                <div class="img-box">
-                    <img src="{{ tech.image.url }}" width="100px" height="100px"/>
-                </div>
-                <div class="desc">
-                    <div class="name-box">
-                        <div class="name">
-                            {{ tech.name }}
-                        </div>
-                        <div class="body">
-                            {{ tech.description }}
-                        </div>
-                    </div>
-                </div>
-                <div class="level">
-                    <div class="level-box">
-                        {{ tech.level }}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-        {% endfor %}
+    <div class="wrapper">
+        {% block content %}
+        {% endblock %}
     </div>
     <div class="footer">
         <div class="footer-column">
@@ -171,3 +45,21 @@
 </div>
 </body>
 </html>
+
+<script>
+  let currentTab = window.location.toString();
+
+  function selectTab(name) {
+    document.getElementsByClassName('main-menu-item')[0].classList.remove('focused-item');
+    document.getElementById(name).classList.add('focused-item');
+  }
+
+  if(currentTab.includes('history')) {
+    selectTab('history')
+  } else if(currentTab.includes('skills')) {
+    selectTab('skills')
+  } else if(currentTab.includes('aboutme')) {
+    selectTab('aboutme')
+  }
+
+</script>

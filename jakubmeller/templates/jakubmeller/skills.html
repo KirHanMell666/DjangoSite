@@ -3,12 +3,12 @@
 {% block content %}
 
 <div class="start">
-    <h1>Co potrafię?</h1>
+    <h1 class="h1-skills">Co potrafię?</h1>
 </div>
 <div class="section">
 
     <div class="title">
-        <h2>Języki programowania</h2>
+        <h2 class="h2-skills">Języki programowania</h2>
     </div>
     {% for tech in technologies %}
     {% if tech.section == 1 %}
@@ -20,16 +20,13 @@
             <div class="desc">
                 <div class="name-box">
                     <div class="name">
-                        {{ tech.name }}
+                        <b>{{ tech.name }}</b> - {{ tech.level }}
                     </div>
                     <div class="body">
-                        {{ tech.description }}
+                        <div class="gray">
+                            {{ tech.description }}
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="level">
-                <div class="level-box">
-                    {{ tech.level }}
                 </div>
             </div>
         </div>
@@ -38,7 +35,7 @@
     {% endfor %}
 
     <div class="title">
-        <h2>Systemy operacyjne</h2>
+        <h2 class="h2-skills">Systemy operacyjne</h2>
     </div>
 
     {% for tech in technologies %}
@@ -51,16 +48,13 @@
             <div class="desc">
                 <div class="name-box">
                     <div class="name">
-                        {{ tech.name }}
+                        <b>{{ tech.name }}</b> - {{ tech.level }}
                     </div>
                     <div class="body">
-                        {{ tech.description }}
+                        <div class="gray">
+                            {{ tech.description }}
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="level">
-                <div class="level-box">
-                    {{ tech.level }}
                 </div>
             </div>
         </div>
@@ -69,7 +63,7 @@
     {% endfor %}
 
     <div class="title">
-        <h2>Technologie z jakimi miałem styczność</h2>
+        <h2 class="h2-skills">Technologie z jakimi miałem styczność</h2>
     </div>
 
     {% for tech in technologies %}
@@ -82,16 +76,13 @@
             <div class="desc">
                 <div class="name-box">
                     <div class="name">
-                        {{ tech.name }}
+                        <b>{{ tech.name }}</b> - {{ tech.level }}
                     </div>
                     <div class="body">
-                        {{ tech.description }}
+                        <div class="gray">
+                            {{ tech.description }}
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="level">
-                <div class="level-box">
-                    {{ tech.level }}
                 </div>
             </div>
         </div>
@@ -100,7 +91,7 @@
     {% endfor %}
 
     <div class="title">
-        <h2>Inne</h2>
+        <h2 class="h2-skills">Inne</h2>
     </div>
 
     {% for tech in technologies %}
@@ -113,16 +104,13 @@
             <div class="desc">
                 <div class="name-box">
                     <div class="name">
-                        {{ tech.name }}
+                        <b>{{ tech.name }}</b> - {{ tech.level }}
                     </div>
                     <div class="body">
-                        {{ tech.description }}
+                        <div class="gray">
+                            {{ tech.description }}
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="level">
-                <div class="level-box">
-                    {{ tech.level }}
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 @import url(fp.css);
+@import url(skills.css);
 
 html {
     font-family: Roboto sans-serif !important;
@@ -14,8 +15,11 @@ body {
     margin: 0;
 }
 
-.content {
+.mycontent {
   flex: 1 0 auto;
+  position: relative;
+  padding-bottom: 90px;
+  background-color: #fff3d6;
 }
 
 .navbar {
@@ -33,7 +37,7 @@ body {
 }
 
 .navbar .content {
-    width: calc(100% - 360px);
+    width: calc(100% - 50px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,6 +89,7 @@ body {
 }
 
 .navbar .side-item {
+    padding-left: 1rem;
     display: flex;
     align-items: center;
     width: 250px;
@@ -143,10 +148,6 @@ body {
     color: black;
 }
 
-.zaloguj {
-    margin-right: 10px;
-}
-
 .navbar .main-menu .main-menu-item:hover {
     padding: 0 30px;
     font-size: 13px;
@@ -159,13 +160,19 @@ body {
     font-size: 13px;
     background-color: black;
     color: #FFC017;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .section {
     padding: 0 180px;
     box-shadow: #2f3c56;
     min-height: calc(100vh - 380px);
-    min-width: 1000px;
+    min-width: 750px;
 }
 
 .container {
@@ -174,6 +181,10 @@ body {
 }
 
 .footer {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
   flex-shrink: 0;
   background-color: #161616;
   color: #afafaf;
@@ -184,7 +195,6 @@ body {
   font-weight: lighter;
   width: 100%;
   line-height: 250%;
-  position: 8;
 }
 
 .footer-column {
@@ -203,36 +213,6 @@ body {
     border-left: 1px solid #868686;
 }
 
-.modal-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    z-index: 2;
-    visibility:hidden;
-    opacity:0;
-    transition:visibility 0.3s linear,opacity 0.3s linear;
-}
-
-.modal-box {
-    position: absolute;
-    top: -1000px;
-    left: calc(50% - 20vw);
-    width: 40vw;
-    height: 75vh;
-    background-color: white;
-    border-radius: 10px;
-    z-index: 3;
-    opacity: 1;
-    transition: 0.2s;
-}
-
-.margin-left {
-    margin-left: 5px;
-}
-
 .avatar-small {
     width: 40px;
     height: 40px;
@@ -247,6 +227,10 @@ body {
 .avatar-small i {
     font-size: 45px;
     color: grey;
+}
+
+.main-menu a i {
+    margin-right: 15px;
 }
 
 .avatar-big {
@@ -265,3 +249,10 @@ body {
     color: grey;
 }
 
+@media all and (max-width: 1120px) {
+
+    .section {
+    padding: 0 20px;
+    min-width: 420px;
+}
+}
