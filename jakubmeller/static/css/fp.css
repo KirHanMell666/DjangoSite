@@ -33,10 +33,7 @@
     margin-right: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.tech-box .first-col .img-box img:hover {
-    opacity: 0.6;
+    display: block;
 }
 
 .tech-box .first-col {
