@@ -1,0 +1,125 @@
+.aboutme .start .h1-aboutme{
+    font-size: 2.2rem;
+}
+
+.aboutme .aboutme-container {
+    margin: 0 200px;
+    padding: 20 20px;
+    background-color: #bcffab;
+    border-radius: 120px;
+}
+
+.aboutme .aboutme-container .line {
+    margin-top: 1rem;
+    border-bottom: 1px solid #868686;
+}
+
+.aboutme .aboutme-top {
+    display: flex;
+}
+
+.aboutme .aboutme-top .aboutme-img-box img {
+    border-radius: 50%;
+    border: 3px solid #117500;
+    width: 250px;
+    height: 250px;
+}
+
+.aboutme .aboutme-top-content {
+    padding: 0 30px;
+    padding-top: 25px;
+    display: flex;
+    width: 1000%;
+}
+
+.aboutme .aboutme-top-content .personal{
+    width: 50%;
+    text-align: center;
+}
+
+.aboutme .aboutme-top-content .personal p span{
+    color: #bababa;
+}
+
+.aboutme .aboutme-top-content .contact{
+    width: 50%;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.aboutme .aboutme-top-content p {
+
+}
+
+.aboutme .aboutme-top-content h3 {
+    margin-bottom: 25px;
+}
+
+.aboutme .aboutme-bottom-content {
+    padding: 0 50px;
+    padding-top: 25px;
+}
+
+.aboutme .aboutme-bottom-content h2{
+    width: 100%;
+    text-align: center;
+}
+
+.aboutme .aboutme-bottom-content .interests{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.aboutme .aboutme-bottom-content .interests > div {
+  flex: 48%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+  margin-bottom: 10px;
+}
+
+.aboutme .aboutme-bottom-content .interests .interests-element {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    background-color: #92ff75;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.aboutme .aboutme-bottom-content .interests .interests-element img{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-right: 10px;
+}
+
+@media all and (max-width: 1400px) {
+
+    .aboutme .aboutme-container {
+        margin: 0 110px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+
+    .aboutme .aboutme-top .aboutme-img-box img {
+    width: 150px;
+    height: 150px;
+    }
+
+    .aboutme .aboutme-top .aboutme-img-box {
+    padding-top: 15px;
+    padding-left: 15px;
+    }
+
+    .aboutme .aboutme-top-content {
+        padding: 0 50px;
+    }
+
+    .aboutme .aboutme-container {
+        margin: 0 20px;
+    }
+
+    .aboutme .aboutme-top-content {
+    padding: 0 15px;
+    }
+}

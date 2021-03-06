@@ -2,9 +2,54 @@
 
 {% block content %}
 
-<div class="start">
-    <h1>Strona o mnie</h1>
-    <h2>Tu będą informację takie jak e-mail, zdjęcia/e, zainteresowania itp.</h2>
+<div class="aboutme">
+    <div class="start">
+        <h1 class="h1-aboutme">O mnie</h1>
+    </div>
+    <div class="aboutme-container">
+        <div class="aboutme-top">
+            <div class="aboutme-img-box">
+                <img src="/media/image/profil.jpg"/>
+            </div>
+            <div class="aboutme-top-content">
+                <div class="personal">
+                    <h3>Informacje osobiste</h3>
+                    <p>Jakub Filip Meller</p>
+                    <p>22 lata<span> (stan na 06.03.2021)</span></p>
+
+                </div>
+                <div class="contact">
+                    <h3>Kontakt</h3>
+                    <p>783374178</p>
+                    <p>kuba.meller@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        <div class="aboutme-bottom-content">
+            <h2>Zainteresowania</h2>
+            <div class="interests">
+                <div class="interests-element">
+                    <img src="/media/image/cube.png" width="100px" height="100px"/>
+                    <h3>Kostka Rubika</h3>
+                </div>
+                <div class="interests-element">
+                    <img src="/media/image/chess.png" width="100px" height="100px"/>
+                    <h3>Szachy</h3>
+                </div>
+                <div class="interests-element">
+                    <img src="/media/image/netflix.jpg" width="100px" height="100px"/>
+                    <h3>Serial/Film</h3>
+                </div>
+                <div class="interests-element">
+                    <img src="/media/image/game.jpg" width="100px" height="100px"/>
+                    <h3>Gry</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

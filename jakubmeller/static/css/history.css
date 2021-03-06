@@ -1,3 +1,9 @@
 .history .start .h1-history{
-    font-size: 3.5rem;
+    font-size: 2.2rem;
+}
+
+.history .history-container {
+    margin: 0 200px;
+    padding: 10 10px;
+    background-color: yellow;
 }

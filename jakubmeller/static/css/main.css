@@ -1,6 +1,7 @@
 @import url(fp.css);
 @import url(skills.css);
 @import url(history.css);
+@import url(aboutme.css);
 
 html {
     font-family: Roboto sans-serif !important;
