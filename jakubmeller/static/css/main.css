@@ -1,5 +1,6 @@
 @import url(fp.css);
 @import url(skills.css);
+@import url(history.css);
 
 html {
     font-family: Roboto sans-serif !important;
@@ -19,13 +20,13 @@ body {
   flex: 1 0 auto;
   position: relative;
   padding-bottom: 90px;
-  background-color: #fff3d6;
+  background-color: #dbffd6;
 }
 
 .navbar {
     height: 60px;
     width: 100%;
-    background-color: #FFC017;
+    background-color: #1eff00;
     position: fixed;
     top:0;
     left: 0;
@@ -152,14 +153,14 @@ body {
     padding: 0 30px;
     font-size: 13px;
     background-color: black;
-    color: #FFC017;
+    color: #1eff00;
 }
 
 .navbar .main-menu .focused-item {
     padding: 0 30px;
     font-size: 13px;
     background-color: black;
-    color: #FFC017;
+    color: #1eff00;
     cursor: pointer;
     transition: 0.2s;
     height: 100%;
@@ -169,7 +170,7 @@ body {
 }
 
 .section {
-    padding: 0 180px;
+    padding: 0 200px;
     box-shadow: #2f3c56;
     min-height: calc(100vh - 380px);
     min-width: 750px;
@@ -249,10 +250,18 @@ body {
     color: grey;
 }
 
+@media all and (max-width: 1420px) {
+
+    .section {
+    padding: 0 110px;
+    min-width: 420px;
+    }
+}
+
 @media all and (max-width: 1120px) {
 
     .section {
     padding: 0 20px;
     min-width: 420px;
-}
+    }
 }
