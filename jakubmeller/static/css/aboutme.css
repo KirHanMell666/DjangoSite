@@ -5,8 +5,12 @@
 .aboutme .aboutme-container {
     margin: 0 200px;
     padding: 20 20px;
-    background-color: #bcffab;
+    background: linear-gradient(135deg, #acffa1, #dbffd6);
     border-radius: 120px;
+}
+
+.aboutme {
+    background-color: #dbffd6;
 }
 
 .aboutme .aboutme-container .line {
@@ -81,7 +85,7 @@
     display: flex;
     width: 100%;
     text-align: center;
-    background-color: #92ff75;
+    background: linear-gradient(135deg, #81ff70, #c9ffc2);
     border-radius: 25px;
     margin: 5px;
 }
