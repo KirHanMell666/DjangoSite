@@ -15,8 +15,8 @@
 .tech-box {
     display: flex;
     margin-bottom: 10px;
-    background: linear-gradient(135deg, #acffa1, #dbffd6);
-    border-radius: 10px;
+    background: linear-gradient(135deg, #cccccc, #dddddd);
+    border-radius: 15px;
 }
 
 .tech-box .first-col .img-box {

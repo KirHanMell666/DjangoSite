@@ -5,16 +5,12 @@
 .aboutme .aboutme-container {
     margin: 0 200px;
     padding: 20 20px;
-    background: linear-gradient(135deg, #acffa1, #dbffd6);
+    background: linear-gradient(135deg, #bbbbbb, #dddddd);
     border-radius: 120px;
 }
 
-.aboutme {
-    background-color: #dbffd6;
-}
-
 .aboutme .aboutme-container .line {
-    margin-top: 1rem;
+    margin-top: 2.0rem;
     border-bottom: 1px solid #868686;
 }
 
@@ -24,7 +20,7 @@
 
 .aboutme .aboutme-top .aboutme-img-box img {
     border-radius: 50%;
-    border: 3px solid #117500;
+    border: 3px solid #555555;
     width: 250px;
     height: 250px;
 }
@@ -42,7 +38,7 @@
 }
 
 .aboutme .aboutme-top-content .personal p span{
-    color: #bababa;
+    color: #888888;
 }
 
 .aboutme .aboutme-top-content .contact{
@@ -85,9 +81,10 @@
     display: flex;
     width: 100%;
     text-align: center;
-    background: linear-gradient(135deg, #81ff70, #c9ffc2);
+    background: linear-gradient(135deg, #aaaaaa, #bbbbbb);
     border-radius: 25px;
     margin: 5px;
+
 }
 
 .aboutme .aboutme-bottom-content .interests .interests-element img{
